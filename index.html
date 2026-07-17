@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="https://base44.app/logo_v3.png" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   untitled
+  </title>
+  <script crossorigin="" src="/assets/index-DvsAFu3S.js" type="module">
+  </script>
+  <link crossorigin="" href="/assets/index-6pOFJl5z.css" rel="stylesheet"/>
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "6a18dd6616fe5131e05ca72d";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="untitled manages 1 data type including saved prompts. Helps you organize, track, and share your work in 1 place for teams and solo users." name="description"/>
+  <meta content="untitled" property="og:title"/>
+  <meta content="untitled manages 1 data type including saved prompts. Helps you organize, track, and share your work in 1 place for teams and solo users." property="og:description"/>
+  <meta content="https://base44.app/logo_v3.png" property="og:image"/>
+  <meta content="https://typograhybyken.base44.app?is_new_user=true" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="untitled" property="og:site_name"/>
+  <meta content="untitled" name="twitter:title"/>
+  <meta content="untitled manages 1 data type including saved prompts. Helps you organize, track, and share your work in 1 place for teams and solo users." name="twitter:description"/>
+  <meta content="https://base44.app/logo_v3.png" name="twitter:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://typograhybyken.base44.app?is_new_user=true" name="twitter:url"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="untitled" name="apple-mobile-web-app-title"/>
+  <link href="https://typograhybyken.base44.app?is_new_user=true" rel="canonical"/>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "untitled", "@context": "https://schema.org", "@type": "WebSite", "url": "https://typograhybyken.base44.app"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "untitled", "@context": "https://schema.org", "@type": "Organization", "url": "https://typograhybyken.base44.app"}
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div data-seo-source="builder" id="seo-snapshot" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+    <main>
+     <header>
+      <h1>
+       untitled
+      </h1>
+      <p>
+       untitled manages 1 data type including saved prompts. Helps you organize, track, and share your work in 1 place for teams and solo users.
+      </p>
+     </header>
+     <nav aria-label="Pages">
+      <h2>
+       Pages
+      </h2>
+      <ul>
+       <li>
+        <a href="/Login">
+         Login
+        </a>
+        — Login on untitled. untitled manages 1 data type including saved prompts.
+       </li>
+       <li>
+        <a href="/Register">
+         Register
+        </a>
+        — Register on untitled. untitled manages 1 data type including saved prompts.
+       </li>
+       <li>
+        <a href="/ForgotPassword">
+         Forgot Password
+        </a>
+        — Forgot Password on untitled. untitled manages 1 data type including saved prompts.
+       </li>
+       <li>
+        <a href="/ResetPassword">
+         Reset Password
+        </a>
+        — Reset Password on untitled. untitled manages 1 data type including saved prompts.
+       </li>
+      </ul>
+     </nav>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
